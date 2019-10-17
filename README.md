@@ -1,2 +1,2 @@
 # CodingDojo
-# All names writing with first letter in uppercase
+# All names writing lowercase
