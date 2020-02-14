@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <header>
+        <h1>CURSOS CIBERTEC</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Nosotros</li>
+            <li>Servicios</li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <p>Agregar cursos</p>
+            <input type="text" id="item">
+            <button onclick="add()">Agregar</button>
+        </div>
+        <textarea name="cursos" id="all" cols="30" rows="10"></textarea>
+    </section>
+    <footer>
+        &copy; Cibertec Bellavista 2020 
+    </footer>
+    <script>
+        function add() {
+            var text = document.getElementById("item").value;
+            var all = document.getElementById("all").value;
+            all += text + ", ";
+            document.getElementById("item").innerHTML = "";
+            document.getElementById("all").innerHTML = all;
+            console.log(text);
+        }
+    </script>
+</body>
+</html>
