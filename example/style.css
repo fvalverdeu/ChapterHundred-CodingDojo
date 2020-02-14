@@ -24,6 +24,7 @@ nav ul li {
     display: inline;
     margin-left: 80px;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 section {
@@ -49,6 +50,12 @@ button {
     color: white;
     font-weight: bold;
     border-radius: 5px;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+    color: black;
+    cursor: pointer;
 }
 
 footer {

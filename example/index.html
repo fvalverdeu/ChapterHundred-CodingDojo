@@ -33,7 +33,7 @@
             var text = document.getElementById("item").value;
             var all = document.getElementById("all").value;
             all += text + ", ";
-            document.getElementById("item").innerHTML = "";
+            document.getElementById("item").value = "";
             document.getElementById("all").innerHTML = all;
             console.log(text);
         }
